@@ -1,15 +1,36 @@
-/* .rookie {
-    text-align: center;
-    margin: 0.5em 0;
-}
 
-.rookie:hover {
+
+
+
+.modal:hover {
     animation: jiggle 0.2s;
     transition: .4s all ease;
     z-index: 11;
     box-shadow: 5px 15px 20px rgba(72, 62, 23, 0.4)
-} */
+}
 
 /* .rookie__photo {
     width: 200px;
 } */
+
+.modal {
+    position: absolute;
+    top: 5em;
+    left: 10em;
+    right: 10em;
+    bottom: 25em;
+    background-color: rgb(243, 243, 226);
+    box-shadow: 5px 15px 20px rgba(72, 62, 23, 0.4);
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }

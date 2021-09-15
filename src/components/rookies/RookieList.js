@@ -22,7 +22,7 @@ export const RookieList = () => {
                 rookies.map(
                     (rookie) => {
                         return <div key={`rookie--${rookie.id}`}>
-                            <Link to={`/rookies/${rookie.id}`}> <li className={`rookie`}> {rookie.name} </li></Link>
+                            <Link to={`/rookies/${rookie.id}`}> <li className={`rookie`}> {rookie.name} </li> </Link>
                         </div>
                     }
                 )

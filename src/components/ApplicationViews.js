@@ -4,6 +4,7 @@ import { EditNote } from "./notes/EditNote"
 import { NoteForm } from "./notes/NoteForm"
 import { Note } from "./notes/Notes"
 import { Rookie } from "./rookies/Rookie"
+import { Rookie2 } from "./rookies/Rookie2"
 import { RookieList } from "./rookies/RookieList"
 
 
@@ -20,7 +21,7 @@ export const ApplicationViews = () => {
             </Route>
 
             <Route exact path="/rookies/:rookieId(\d+)">
-                <Rookie />
+                <Rookie2 />
             </Route>
 
             <Route exact path="/notes">
