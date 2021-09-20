@@ -9,6 +9,9 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/rookies">Rookies</Link>
             </li>
             <li className="navbar__item active">
+                <Link className="navbar__link" to="/rankings">Rankings</Link>
+            </li>
+            <li className="navbar__item active">
                 <Link className="navbar__link" to="#"
                 onClick = {
                     () => {

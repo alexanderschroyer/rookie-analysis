@@ -22,7 +22,7 @@ export const EditNote = () => {
 
     const saveNote = (event) => {
         event.preventDefault()
-        console.log(event.target)
+        
         const fetchOption = {
             method: "PATCH",
             headers: {

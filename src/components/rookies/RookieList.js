@@ -18,15 +18,17 @@ export const RookieList = () => {
 
     return (
         <>
-            {
-                rookies.map(
-                    (rookie) => {
-                        return <div key={`rookie--${rookie.id}`}>
-                            <Link to={`/rookies/${rookie.id}`}> <li className={`rookie`}> {rookie.name} </li> </Link>
-                        </div>
-                    }
-                )
-            }
+            <div className="rookies">
+                {
+                    rookies.map(
+                        (rookie) => {
+                            return <div key={`rookie--${rookie.id}`}>
+                                <Link to={`/rookies/${rookie.id}`}> <li className={`rookie`}> {rookie.name} </li> </Link>
+                            </div>
+                        }
+                    )
+                }
+            </div>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import { Route } from "react-router-dom"
+import { UserRankList } from "./lists/UserRankList"
 import { EditNote } from "./notes/EditNote"
 import { NoteForm } from "./notes/NoteForm"
 import { Note } from "./notes/Notes"
@@ -40,7 +41,13 @@ export const ApplicationViews = () => {
                 <Note />
             </Route>
 
+            <Route path="/rankings">
+                <UserRankList />
+            </Route>
 
+            <Route path="/rankings/:userId(\d+)">
+                <UserRankList />
+            </Route>
 
 
         </>
